@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Fernando: desarrollo de software con Java, Spring Boot, Angular, bases de datos relacionales y ciberseguridad.">
+    <title>Fernando | Desarrollador de Software</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand mono" href="#inicio">&lt;fernando<span>/&gt;</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="menu">
+                    <ul class="navbar-nav gap-md-2">
+                        <li class="nav-item"><a class="nav-link" data-seccion="inicio" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" data-seccion="stack" href="#stack">Stack</a></li>
+                        <li class="nav-item"><a class="nav-link" data-seccion="proyectos" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" data-seccion="seguridad" href="#seguridad">Seguridad</a></li>
+                        <li class="nav-item"><a class="nav-link" data-seccion="contacto" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <p class="mono etiqueta">$ whoami</p>
+                        <h1>Hola, soy <span class="acento">Fernando</span>.<br>Desarrollo software seguro y escalable.</h1>
+                        <p class="lead-texto">
+                            Ingeniero de desarrollo en Popayán, Colombia. Construyo aplicaciones web
+                            con <strong>Java y Spring Boot</strong> en el backend, <strong>Angular</strong> en el frontend
+                            y <strong>bases de datos relacionales</strong>, con la seguridad presente desde el diseño.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#proyectos" class="btn btn-acento">Ver proyectos</a>
+                            <a href="#contacto" class="btn btn-borde">Contáctame</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="terminal" aria-hidden="true">
+                            <div class="terminal__barra"><span></span><span></span><span></span></div>
+                            <pre class="mono"><span class="c">// perfil.java</span>
+<span class="k">public record</span> <span class="t">Desarrollador</span>(
+  String rol,
+  List&lt;String&gt; backend,
+  List&lt;String&gt; frontend,
+  List&lt;String&gt; datos,
+  List&lt;String&gt; seguridad
+) {}
+
+<span class="k">var</span> yo = <span class="k">new</span> <span class="t">Desarrollador</span>(
+  <span class="s">"Software &amp; Soporte"</span>,
+  List.of(<span class="s">"Java"</span>, <span class="s">"Spring Boot"</span>),
+  List.of(<span class="s">"Angular"</span>, <span class="s">"Bootstrap"</span>),
+  List.of(<span class="s">"MariaDB"</span>, <span class="s">"SQL"</span>),
+  List.of(<span class="s">"OWASP"</span>, <span class="s">"JWT"</span>)
+);</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section id="stack" class="seccion alt">
+            <div class="container">
+                <p class="mono etiqueta">01 / stack</p>
+                <h2>Tecnologías con las que trabajo</h2>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="skill">
+                            <i class="bi bi-cup-hot" aria-hidden="true"></i>
+                            <h3>Java &amp; Spring Boot</h3>
+                            <p>APIs REST, capas controller/service/repository, Spring Data y Spring Security.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="skill">
+                            <i class="bi bi-window-stack" aria-hidden="true"></i>
+                            <h3>Angular</h3>
+                            <p>Componentes, servicios, formularios reactivos y consumo de APIs con HttpClient.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="skill">
+                            <i class="bi bi-database" aria-hidden="true"></i>
+                            <h3>Bases de datos relacionales</h3>
+                            <p>Modelado, consultas SQL, índices e integridad de datos con MariaDB.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="skill">
+                            <i class="bi bi-shield-lock" aria-hidden="true"></i>
+                            <h3>Ciberseguridad</h3>
+                            <p>Buenas prácticas OWASP, autenticación, validación de entradas y manejo seguro de datos.</p>
+                        </article>
+                    </div>
+                </div>
+                <p class="mono chips mt-4">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span>
+                    <span>Git</span><span>REST</span><span>Maven</span><span>Linux</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="seccion">
+            <div class="container">
+                <p class="mono etiqueta">02 / proyectos</p>
+                <h2>Proyectos destacados</h2>
+
+                <div class="row g-4 mt-1">
+
+                    <!-- Proyecto 1 -->
+                    <div class="col-lg-6">
+                        <article class="proyecto">
+                            <div class="proyecto__cabecera mono">
+                                <span class="punto"></span> cuatrocancha-fc
+                            </div>
+                            <div class="proyecto__cuerpo">
+                                <h3>CuatroCancha FC</h3>
+                                <p class="proyecto__tipo">Tienda web de artículos de fútbol</p>
+                                <p>
+                                    Catálogo de 12 productos generado dinámicamente desde un arreglo de datos,
+                                    con búsqueda, filtros por categoría y ordenamiento. Incluye carrito lateral
+                                    persistente, ranking de más vendidos y accesibilidad (aria, foco visible,
+                                    reducción de movimiento).
+                                </p>
+                                <ul class="proyecto__lista">
+                                    <li>Carrito con cantidades, total y simulación de compra</li>
+                                    <li>Persistencia con <code>localStorage</code> sincronizada entre pestañas</li>
+                                    <li>Escape de HTML en el render para prevenir XSS</li>
+                                </ul>
+                                <p class="mono chips">
+                                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span>
+                                </p>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-acento btn-sm">Ver demo</a>
+                                    <a href="#" class="btn btn-borde btn-sm"><i class="bi bi-github" aria-hidden="true"></i> Código</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="col-lg-6">
+                        <article class="proyecto">
+                            <div class="proyecto__cabecera mono">
+                                <span class="punto"></span> barberia-estilo-urbano
+                            </div>
+                            <div class="proyecto__cuerpo">
+                                <h3>Barbería Estilo Urbano</h3>
+                                <p class="proyecto__tipo">Sitio web multipágina para una barbería</p>
+                                <p>
+                                    Sitio con páginas de inicio, quiénes somos y contacto, diseñado con una
+                                    paleta oscura y dorada. Navbar responsive, tarjetas de servicios,
+                                    formulario de contacto con validación y horarios de atención.
+                                </p>
+                                <ul class="proyecto__lista">
+                                    <li>Maquetación responsive con el sistema de rejilla de Bootstrap</li>
+                                    <li>Formulario con validación nativa de HTML5</li>
+                                    <li>Estilos propios con variables CSS y HTML semántico</li>
+                                </ul>
+                                <p class="mono chips">
+                                    <span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>Responsive</span>
+                                </p>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-acento btn-sm">Ver demo</a>
+                                    <a href="#" class="btn btn-borde btn-sm"><i class="bi bi-github" aria-hidden="true"></i> Código</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEGURIDAD -->
+        <section id="seguridad" class="seccion alt">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <p class="mono etiqueta">03 / seguridad</p>
+                        <h2>La seguridad no es un extra</h2>
+                        <p class="lead-texto mb-0">
+                            Desarrollo pensando en proteger los datos y a los usuarios desde la primera línea de código.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="list-unstyled seg">
+                            <li><i class="bi bi-check2-square" aria-hidden="true"></i> Prevención de inyección SQL con consultas parametrizadas y JPA.</li>
+                            <li><i class="bi bi-check2-square" aria-hidden="true"></i> Protección contra XSS: escape de salida y validación de entradas.</li>
+                            <li><i class="bi bi-check2-square" aria-hidden="true"></i> Autenticación y autorización con Spring Security y tokens JWT.</li>
+                            <li><i class="bi bi-check2-square" aria-hidden="true"></i> Contraseñas con hash (BCrypt) y manejo cuidadoso de secretos.</li>
+                            <li><i class="bi bi-check2-square" aria-hidden="true"></i> Guía del OWASP Top 10 como lista de revisión en cada proyecto.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion text-center">
+            <div class="container">
+                <p class="mono etiqueta justify-content-center">04 / contacto</p>
+                <h2>¿Trabajamos juntos?</h2>
+                <p class="lead-texto mx-auto">Escríbeme si tienes un proyecto, una oportunidad o quieres conversar sobre software.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="mailto:tucorreo@ejemplo.com" class="btn btn-acento"><i class="bi bi-envelope" aria-hidden="true"></i> Correo</a>
+                    <a href="#" class="btn btn-borde"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+                    <a href="#" class="btn btn-borde"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="container text-center mono">
+            &copy; <span id="anio">2026</span> Fernando · Popayán, Colombia
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
